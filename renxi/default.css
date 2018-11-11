@@ -1,0 +1,135 @@
+body{margin:0;padding:0;font-size:14px;font-family:'微软雅黑','宋体',sans-serif;color:#231F20;overflow:auto; }
+a {color:#000;font-size:14px;}
+#main{width:100%;}
+#wrap{position:relative;margin:0 auto;width:1100px;height:680px;margin-top:10px;}
+#text{width:400px;height:425px;left:60px;top:80px;position:absolute;}
+#code{display:none;font-size:16px;}
+#clock-box {position:absolute;left:60px;top:550px;font-size:28px;display:none;}
+#clock-box a {font-size:28px;text-decoration:none;}
+#clock{margin-left:48px;}
+#clock .digit {font-size:64px;}
+#canvas{margin:0 auto;width:1100px;height:680px;}
+#error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
+.hand{cursor:pointer;}
+.say{margin-left:5px;}
+.space{margin-right:150px;}
+* {padding:0;margin:0;list-style:none;}
+img {border:0;}
+.focus {
+	width: 100%;
+	min-width: 980px;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+.f-img-list {
+	height: 380px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	background: url('../images/f-img-list-bg.jpg');
+}
+.f-img-list li {
+	height: 380px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 101;
+}
+.f-img-list li.on {
+	z-index: 105;
+}
+.focus .f-b {
+	width: 980px;
+	margin: auto;
+	position: relative;
+	z-index: 110;
+}
+.focus .f-b .f-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.d-img-list-bg, .d-img-list {
+	position: absolute;
+	left:100px;
+	top: 0;
+	width: 200px;
+	height: 380px;
+}
+.d-img-list-bg {
+	background: #000000;
+	opacity: 0.2;
+	filter: Alpha(Opacity = 20);
+}
+.d-img-list li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 112;
+	display: none;
+	width: 200px;
+	height: 380px;
+}
+.d-img-list li.on {
+	z-index: 113;
+	display: block;
+}
+.d-img-list li h3 {
+	padding: 60px 10px 10px 10px;
+	color: #37a4e4;
+	font-size: 22px;
+	font-family: Microsoft YaHei;
+	font-weight: normal;
+}
+.d-img-list li p {
+	padding: 10px 10px 10px 10px;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: Microsoft YaHei;
+	font-weight: normal;
+	line-height: 1.6;
+}
+.focus-btns {
+	position: absolute;
+	right: 140px;
+	top: 280px;
+}
+.btn-focus {
+	width: 146px;
+	height: 50px;
+	display: inline-block;
+	margin-right: 10px;
+	background: url('../images/btn-focus.png') no-repeat;
+	display: none;
+}
+.btn-focus.on {
+	display: block;
+}
+.btn-focus-down {
+	background-position: 0 0;
+}
+.btn-manage {
+	background-position: 0 -50px;
+}
+.focus-page-btn {
+	width: 66px;
+	height: 66px;
+	background: url('../images/focus-page-btns.png') no-repeat;
+	position: absolute;
+	top: 160px;
+	z-index: 110;
+}
+.focus-btn-prev {
+	background-position: 0 0;
+	left: 30px;
+}
+.focus-btn-next {
+	background-position: -66px 0;
+	right: 30px;
+}
